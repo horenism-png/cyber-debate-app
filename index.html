@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horen's Cyber-Debate Arena</title>
+  <!-- This links your manifest directly -->
+  <link rel="manifest" href="manifest.json">
+  <style>
+    /* This makes the Google Apps Script fill the entire phone screen */
+    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #1a1a1a; }
+    iframe { width: 100%; height: 100%; border: none; }
+  </style>
+</head>
+<body>
+  
+  <!-- PASTE YOUR GOOGLE APPS SCRIPT URL HERE -->
+  <iframe src="https://script.google.com/macros/s/AKfycbwifUCQvEVTFI_9F3SyT6A_QrZLF2PfE1rElJhIHIXoKAVL34GFVG3eVmRIsBmXNlBc/exec"></iframe>
+
+  <!-- This registers your Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+          .then(registration => console.log('Service Worker registered'))
+          .catch(err => console.error('Service Worker failed', err));
+      });
+    }
+  </script>
+</body>
+</html>
