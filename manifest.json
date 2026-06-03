@@ -42,6 +42,3 @@
     }
   ]
 }
-```eof
-
-Just be sure to double-check that the `"sizes": "720x1280"` matches the actual pixel dimensions of the three screenshots you uploaded, and your manifest is good to go!
