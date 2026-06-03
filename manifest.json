@@ -1,6 +1,7 @@
 {
   "name": "Horen's Cyber-Debate Arena",
   "short_name": "CyberDebate",
+"id": "/",
   "description": "Step into the arena and defend your arguments against an AI Troll to test your linguistic skills.",
   "start_url": "/index.html",
   "display": "standalone",
